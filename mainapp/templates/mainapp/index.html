@@ -1,0 +1,28 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'style/style.css' %}">
+    <link rel = "stylesheet" type = "text/css" href = "https://cdnjs.cloudflare.com/ajax/libs/extjs/6.0.0/classic/theme-crisp/resources/theme-crisp-all.css" />
+{% endblock %}
+
+{% block js %}
+    <script type = "text/javascript" src = "https://cdnjs.cloudflare.com/ajax/libs/extjs/6.0.0/ext-all.js"> </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="{% static 'js/index.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+<div class="modal-window">
+    <div class="modal-form" id="movie-form">
+
+    </div>
+</div>
+
+<div class="app-wrapper">
+    <div id="app">
+
+    </div>
+</div>
+
+{% endblock %}

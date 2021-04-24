@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+.modal-window {
+    display:flex;
+    opacity: 0;
+    position: absolute;
+    z-index: -2000;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100%;
+    width: 100vw;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.modal-form {
+    margin-bottom: 50vh;
+}
+
+.app-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
